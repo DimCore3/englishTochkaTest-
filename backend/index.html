@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="http://fonts.cdnfonts.com/css/museo-sans-cyrl" rel="stylesheet">
+        <link rel="stylesheet" href="/style.css">
+        <title> test task </title>
+    </head>
+    <body>
+        <form action="http://127.0.0.1:8080/login" method='POST' id="authForm">
+            <input type="text" id="login" name="login" placeholder="login" required>
+            <input type="password" id='password' name="password" placeholder="password" required>
+            <input type="submit" value="Авторизация">
+        </form>
+        <div id="root" class="hidden">
+            <div class="blocks">
+                <div class="firstBlock">
+                    <h3 class="title firstBlockTitle">Ваш баланс:</h3>
+                    <div class="balance">
+                        <img class="balanceCoinImg" src="/img/coin.png" alt="Монета">
+                        <p id="balanceAmount"> - </p>
+                        <img class="balanceCurrency" src="/img/currency.png" alt="Монета">
+                    </div>
+                </div>
+                <div class="secondBlock">
+                    <div class="secondBlockTopTitles">
+                        <h3 class="title secondBlockTitle">Варианты обмена на скидку</h3>
+                        <button id="instruction">Инструкция </button>
+                    </div>
+                    <div class="offers">
+                        <div class="offer">
+                            <div class="price"> 
+                                <img class='offerCoinImg' src="/img/coin.png" alt="coin">
+                                <p class="offerCost">50</p>
+                                <img class="offerCurrencyImg" src="/img/currency.png" alt="currency">
+                            </div>
+                            <div class="offerIcon">
+                                <img src="/img/phone.png" alt="phone">
+                                <p class="xDouble">x2</p>
+                            </div>
+                            <div class="offerDescription">
+                                <div class="discount">
+                                    <p>50%</p>
+                                </div>
+                                <p class="decriptionText">на звонки ST (x2)</p>
+                            </div>
+                            <button class="offerUsed activateOffer" disabled>
+                                Уже <br> использовано
+                            </button>
+                        </div>
+                        <div class="offer">
+                            <div class="price"> 
+                                <img class='offerCoinImg' src="/img/coin.png" alt="coin">
+                                <p class="offerCost">70</p>
+                                <img class="offerCurrencyImg" src="/img/currency.png" alt="currency">
+                            </div>
+                            <div class="offerIcon">
+                                <img src="/img/book.png" alt="phone">
+                            </div>
+                            <div class="offerDescription">
+                                <div class="discount">
+                                    <p>30%</p>
+                                </div>
+                                <p class="decriptionText">на спецкурс</p>
+                            </div>
+                            <button class="offerUnused activateOffer">
+                                Использовать <br> скидку
+                            </button>
+                        </div>
+                        <div class="offer">
+                            <div class="price"> 
+                                <img class='offerCoinImg' src="/img/coin.png" alt="coin">
+                                <p class="offerCost">100</p>
+                                <img class="offerCurrencyImg" src="/img/currency.png" alt="currency">
+                            </div>
+                            <div class="offerIcon">
+                                <img src="/img/books.png" alt="phone">
+                            </div>
+                            <div class="offerDescription">
+                                <div class="discount">
+                                    <p>50%</p>
+                                </div>
+                                <p class="decriptionText">на курс</p>
+                            </div>
+                            <button class="offerUnused activateOffer">
+                                Использовать <br> скидку
+                            </button>
+                        </div>
+                        <div class="offer">
+                            <div class="price"> 
+                                <img class='offerCoinImg' src="/img/coin.png" alt="coin">
+                                <p class="offerCost">139</p>
+                                <img class="offerCurrencyImg" src="/img/currency.png" alt="currency">
+                            </div>
+                            <div class="offerIcon">
+                                <img src="/img/books.png" alt="phone">
+                            </div>
+                            <div class="offerDescription">
+                                <div class="discount">
+                                    <p>65%</p>
+                                </div>
+                                <p class="decriptionText">на курс</p>
+                            </div>
+                            <button class="offerUnused activateOffer">
+                                Использовать <br> скидку
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modalInstruction">
+            <div id="instructionMessageBox">
+                <button id='closeInstructionButton'>
+                    <img src="/img/closeModal.png" alt="Close instruction">
+                </button>
+                <div id="instructionText">
+                    <h2>Инструкция</h2>
+                    <br>
+                    <p>
+                        После публикации сделайте скрин, 
+                        что вы его написали и отправьте своему куратору, 
+                        чтобы мы добавили вам спецкурс в личный кабинет.
+                    </p>
+                    <br>
+                    <p>
+                        После публикации сделайте скрин, 
+                        что вы его написали и отправьте своему куратору, 
+                        чтобы мы добавили вам спецкурс в личный кабинет.
+                    </p>
+                    <br>
+                    <p>
+                        После публикации сделайте скрин, 
+                        что вы его написали и отправьте своему куратору, 
+                        чтобы мы добавили вам спецкурс в личный кабинет.
+                    </p>
+                    <br>
+                    <p>
+                        После публикации сделайте скрин, 
+                        что вы его написали и отправьте своему куратору, 
+                        чтобы мы добавили вам спецкурс в личный кабинет.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="/index.js"></script>
+</html>

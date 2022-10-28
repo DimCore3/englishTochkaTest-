@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Museo Sans Cyrl';
+}
+
+
+@media all and (min-width: 1080px) {
+    #root {
+        height: 356px;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+    }
+    .blocks {
+        width: 1280px;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .firstBlock {
+        width: 179px;
+        margin-right: 6px;
+        padding: 0 38px;
+    }
+
+    .secondBlock {
+        width: 744px;
+        margin-left: 6px;
+        padding: 0 29px;
+    }
+
+    .firstBlock, .secondBlock {
+        height: 242px;
+    }
+
+    .offer {
+        margin-left: 10px;
+        width: 136px;
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 1080px) {
+    #root {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    .blocks {
+        width: 80%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .firstBlock {
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+    }
+    .secondBlock {
+        width: 100%;
+    }
+    .offers {
+        flex-direction: column;
+    }
+    .offer {
+        display: flex;
+        margin: 10px;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+#root {
+    background: #F0F0F0;
+    display: none;
+    padding-bottom: 36px;
+}
+
+.firstBlock, .secondBlock {
+    background-color: rgba(106, 106, 106, 0.08);
+}
+
+.title {
+    padding: 16px 0px;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 13px;
+}
+
+.firstBlockTitle {
+    font-weight: 400;
+}
+
+.secondBlockTopTitles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secondBlockTitle {
+    font-weight: 600;
+}
+
+#instruction {
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 18px;
+    text-decoration: underline;
+    border: none;
+}
+
+.balance, .offerDescription {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.balance {
+    height: 60px;
+}
+
+.balanceCoinImg {
+    width: 46px;
+    height: 46px;
+    transform: rotate(-6deg);
+
+}
+
+#balanceAmount {
+    font-style: normal;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 43px;
+    text-align: center;
+    color: #242424;
+}
+
+.balanceCurrency {
+    width: 46px;
+    height: 38px;
+}
+
+.offer, .offerIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offerIcon {
+    width: 62px;
+    height: 62px;
+}
+
+.offers {
+    margin-top: 24px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.offer {
+
+}
+
+.offerCoinImg {
+    width: 16px;
+    height: 16px;
+}
+
+.offerCost {
+    margin: 3px;
+    font-weight: 600;
+    height: 12px;
+    font-size: 18px;
+    line-height: 13px;
+}
+
+
+.offerCurrencyImg {
+    width: 15px;
+    height: 13px;
+}
+
+.xDouble {
+    position:relative;
+    z-index: 1;
+    bottom: 14px;
+    right: 4px;
+    font-weight: 600;
+    margin: -10px
+    ;
+}
+
+.discount {
+    width: 37px;
+    height: 18px;
+    background-color: #FF1A1A;
+    border-radius: 4px;
+    transform: rotate(-12.65deg);
+    position: relative;
+    bottom: 6px;
+    right: 4px;
+}
+
+.discount p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 13px;
+    color: #FFFFFF;
+    position: relative;
+    top: 2px;
+}
+
+.decriptionText {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #242424;
+    margin-bottom: 12px;
+}
+
+.activateOffer {
+    border: 0;
+    border-radius: 5px;
+    width: 135px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.offerUsed {
+    background: #00CD52;
+    color: #FFFFFF;
+}
+
+.offerUnused {
+    background: #FECE00;
+    color: #242424;
+}
+
+
+
+#modalInstruction {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+#instructionMessageBox {
+    text-align: left;
+    color: #242424;
+    font-style: normal;
+    background-color: #EDEEF0;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 437px;
+    height: 430px;
+    line-height:22px;
+  }
+  
+  #closeInstructionButton {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+  }
+  
+  #closeInstructionButton:hover,
+  #closeInstructionButton:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #instructionText {
+    padding: 40px;
+  }
+
+#instructionText h2 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 130%;
+}
+
+  #instructionText p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  #authForm {
+    position: relative;
+    margin: 10px 0px 0px 20px;
+    height: 30px;
+  }
